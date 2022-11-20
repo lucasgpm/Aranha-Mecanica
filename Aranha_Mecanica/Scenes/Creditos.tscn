@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Creditos.gd" type="Script" id=1]
+
+[node name="Creditos" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="voltar" type="Button" parent="."]
+margin_left = 481.0
+margin_top = 560.0
+margin_right = 543.0
+margin_bottom = 580.0
+text = "VOLTAR"
+
+[node name="Container" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -20.0
+margin_top = -20.0
+margin_right = 20.0
+margin_bottom = 20.0
+
+[node name="conteudo" type="TextEdit" parent="Container"]
+margin_right = 40.0
+text = "https://adamatomic.itch.io/cavernas
+https://clockworkraven.itch.io/raven-fantasy-pixel-art-tileset-green-forest/download/eyJleHBpcmVzIjoxNjY4ODY1NzU1LCJpZCI6MTAzODExMX0%3d.DVobe%2bKy8a9s6InMujsurwSM2V4%3d"
+
+[node name="titulo" type="TextEdit" parent="Container"]
+margin_top = 4.0
+margin_right = 40.0
+margin_bottom = 4.0
+text = "CRÉDITOS"
+
+[connection signal="pressed" from="voltar" to="." method="_on_voltar_pressed"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ambiente.wav-9c378a33f251627d8cc3a7ce56bc66c7.sample"
+
+[deps]
+
+source_file="res://Sounds/ambiente.wav"
+dest_files=[ "res://.import/ambiente.wav-9c378a33f251627d8cc3a7ce56bc66c7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
