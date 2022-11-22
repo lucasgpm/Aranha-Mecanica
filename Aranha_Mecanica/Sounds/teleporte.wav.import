@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/teleporte.wav-f189d12e7cd4f6649019d8f1ecd29c37.sample"
+
+[deps]
+
+source_file="res://Sounds/teleporte.wav"
+dest_files=[ "res://.import/teleporte.wav-f189d12e7cd4f6649019d8f1ecd29c37.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

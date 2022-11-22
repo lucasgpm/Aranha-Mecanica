@@ -1,0 +1,194 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=1]
+[ext_resource path="res://Others/Blades.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Others/zai_StampOnFlourSack.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Imgs/capa.jpg" type="Texture" id=4]
+[ext_resource path="res://Sounds/menu.wav" type="AudioStream" id=5]
+[ext_resource path="res://Tres/Menu.tres" type="Theme" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+extra_spacing_top = 5
+extra_spacing_bottom = 5
+extra_spacing_char = 9
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="Theme" id=13]
+Button/colors/font_color = Color( 1, 1, 1, 1 )
+Button/colors/font_color_disabled = Color( 0, 0, 0, 1 )
+Button/colors/font_color_focus = Color( 0, 0, 0, 1 )
+Button/colors/font_color_hover = Color( 0, 0, 0, 1 )
+Button/colors/font_color_pressed = Color( 0, 0, 0, 1 )
+Button/constants/hseparation = 0
+Button/fonts/font = null
+Button/styles/disabled = null
+Button/styles/focus = SubResource( 9 )
+Button/styles/hover = SubResource( 10 )
+Button/styles/normal = SubResource( 11 )
+Button/styles/pressed = SubResource( 12 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+extra_spacing_top = 5
+extra_spacing_bottom = 5
+extra_spacing_char = 9
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="Theme" id=18]
+Button/colors/font_color = Color( 1, 1, 1, 1 )
+Button/colors/font_color_disabled = Color( 0, 0, 0, 1 )
+Button/colors/font_color_focus = Color( 0, 0, 0, 1 )
+Button/colors/font_color_hover = Color( 0, 0, 0, 1 )
+Button/colors/font_color_pressed = Color( 0, 0, 0, 1 )
+Button/constants/hseparation = 0
+Button/fonts/font = null
+Button/styles/disabled = null
+Button/styles/focus = SubResource( 14 )
+Button/styles/hover = SubResource( 15 )
+Button/styles/normal = SubResource( 16 )
+Button/styles/pressed = SubResource( 17 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+extra_spacing_top = 5
+extra_spacing_bottom = 5
+extra_spacing_char = 9
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=19]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=20]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=21]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=22]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="Theme" id=23]
+Button/colors/font_color = Color( 0, 0, 0, 1 )
+Button/colors/font_color_disabled = Color( 0, 0, 0, 1 )
+Button/colors/font_color_focus = Color( 0, 0, 0, 1 )
+Button/colors/font_color_hover = Color( 0, 0, 0, 1 )
+Button/colors/font_color_pressed = Color( 0, 0, 0, 1 )
+Button/constants/hseparation = 0
+Button/fonts/font = null
+Button/styles/disabled = null
+Button/styles/focus = SubResource( 19 )
+Button/styles/hover = SubResource( 20 )
+Button/styles/normal = SubResource( 21 )
+Button/styles/pressed = SubResource( 22 )
+
+[sub_resource type="DynamicFont" id=24]
+size = 128
+font_data = ExtResource( 3 )
+
+[node name="Menu" type="Control"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -600.0
+margin_right = 1024.0
+script = ExtResource( 1 )
+
+[node name="Capa" type="Sprite" parent="."]
+position = Vector2( 512.428, 310.44 )
+scale = Vector2( 0.45, 0.45 )
+texture = ExtResource( 4 )
+
+[node name="container" type="VBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_right = 0.163
+anchor_bottom = 1.129
+margin_left = 44.3367
+margin_top = -227.519
+margin_right = 275.337
+margin_bottom = 22.4807
+
+[node name="iniciar" type="Button" parent="container"]
+margin_right = 397.0
+margin_bottom = 58.0
+focus_neighbour_top = NodePath("../creditos")
+theme = ExtResource( 6 )
+custom_colors/font_color_hover = Color( 0.701961, 0.678431, 0.678431, 1 )
+custom_colors/font_color_pressed = Color( 0.25098, 0.25098, 0.25098, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Iniciar"
+
+[node name="como_jogar" type="Button" parent="container"]
+margin_top = 62.0
+margin_right = 397.0
+margin_bottom = 120.0
+theme = SubResource( 13 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0.654902, 0.635294, 0.635294, 1 )
+custom_colors/font_color_pressed = Color( 0.258824, 0.25098, 0.25098, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Como Jogar"
+
+[node name="creditos" type="Button" parent="container"]
+margin_top = 124.0
+margin_right = 397.0
+margin_bottom = 182.0
+focus_neighbour_bottom = NodePath("../iniciar")
+theme = SubResource( 18 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0.654902, 0.635294, 0.635294, 1 )
+custom_colors/font_color_pressed = Color( 0.258824, 0.25098, 0.25098, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Créditos"
+
+[node name="aranha_mecanica" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -460.904
+margin_top = 78.8507
+margin_right = 473.096
+margin_bottom = 278.851
+theme = SubResource( 23 )
+custom_colors/font_color_disabled = Color( 0.6, 0.584314, 0.584314, 1 )
+custom_colors/font_color_focus = Color( 0.6, 0.584314, 0.584314, 1 )
+custom_colors/font_color = Color( 0.6, 0.584314, 0.584314, 1 )
+custom_colors/font_color_hover = Color( 0.6, 0.584314, 0.584314, 1 )
+custom_colors/font_color_pressed = Color( 0.6, 0.584314, 0.584314, 1 )
+custom_fonts/font = SubResource( 24 )
+text = "ARANHA MECÂNICA"
+
+[node name="menufx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+volume_db = -20.0
+autoplay = true
+
+[connection signal="pressed" from="container/iniciar" to="." method="_on_iniciar_pressed"]
+[connection signal="pressed" from="container/como_jogar" to="." method="_on_como_jogar_pressed"]
+[connection signal="pressed" from="container/creditos" to="." method="_on_creditos_pressed"]
